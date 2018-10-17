@@ -28,9 +28,10 @@ document.onkeyup = function (event) {
     if (word.indexOf(letter) < 0) {
         remaining--;
     }
+    if(remaining === 0) {
+        remaining = "You Lose!";
+    }
     tries.textContent = remaining;
-
-    
 }
 
 
